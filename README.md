@@ -1,9 +1,10 @@
 # Module 3: streaming-03-rabbitmq
 
-In this project, we'll look how a message broker can be used to allow processes to work independently (decoupled). This is critical as a system scales. 
-We'll install RabbitMQ and start it up as a service on our machine. The RabbitMQ server will run in the background, waiting for our processes to begin creating "queues". A queue is just a named place for ordered messages. A queue operates like a  queue or checkout line at the store. First in, first out. People (or messages) are processed in order. 
+* In this project, we'll look how a message broker can be used to allow processes to work independently (decoupled). This is critical as a system scales. 
 
-Once we have a queue, we can write software processes that produce and consume messages.
+* We'll install RabbitMQ and start it up as a service on our machine. The RabbitMQ server will run in the background, waiting for our processes to begin creating "queues". A queue is just a named place for ordered messages. A queue operates like a  queue or checkout line at the store. First in, first out. People (or messages) are processed in order. 
+
+* Once we have a queue, we can write software processes that produce and consume messages.
 
 
 ## Prerequisites
