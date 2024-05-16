@@ -34,7 +34,7 @@ We will create a local Python virtual environment to isolate our project's third
 1. Use the built-in Python utility venv to create a new virtual environment named `.venv` in the current directory.
 
 ```shell
-python -m venv .venv
+python3 -m venv .venv
 ```
 
 Verify you get a new .venv directory in your project. 
@@ -73,9 +73,9 @@ You can help by updating the code for other common configurations.
 Just fork the current repo, add your change, and create a pull request (no other changes please) and I'll pull it back in. 
 
 ```shell
-python util_about.py
-python util_aboutenv.py
-python util_aboutrabbit.py
+python3 util_about.py
+python3 util_aboutenv.py
+python3 util_aboutrabbit.py
 pip list
 ```
 
