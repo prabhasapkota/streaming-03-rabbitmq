@@ -1,4 +1,6 @@
 """
+Author: Prabha Sapkota
+Date: 05/16/2024
 
 Message sender / emitter 
 
@@ -7,8 +9,6 @@ This script sends one message on a named queue.
 It will execute and finish. 
 You can change the message and run it again in the same terminal.
 
-Remember:
-- Use the up arrow to recall the last command executed in the terminal.
 """
 
 # Import from Standard Library
