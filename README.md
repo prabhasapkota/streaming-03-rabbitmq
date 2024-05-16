@@ -1,15 +1,9 @@
-# streaming-03-rabbitmq
+# Module 3: streaming-03-rabbitmq
 
-> Get started with RabbitMQ, a message broker, that enables multiple processes to communicate reliably through an intermediary.
+In this project, we'll look how a message broker can be used to allow processes to work independently (decoupled). This is critical as a system scales. 
+We'll install RabbitMQ and start it up as a service on our machine. The RabbitMQ server will run in the background, waiting for our processes to begin creating "queues". A queue is just a named place for ordered messages. A queue operates like a  queue or checkout line at the store. First in, first out. People (or messages) are processed in order. 
 
-This project requires some free code - beyond that available in the Python Standard Library. To avoid messing up our local default Python installation, and any other Python projects we may have, we  create a local virtual environment to install and use these libraries.
-
-Think of a virtual environment as a safe sandbox. 
-We can install whatever we want in our sandbox, and it won't break other Python projects that may require different versions, etc. 
-
-We use the built-in Python utility `venv` to create our virtual environment. 
-There are other options, but this is simplest and most common. 
-We create the environment as a subfolder of this repo named .venv to keep it away from our project code. 
+Once we have a queue, we can write software processes that produce and consume messages.
 
 
 ## Prerequisites
@@ -22,16 +16,15 @@ We create the environment as a subfolder of this repo named .venv to keep it awa
 
 ## Before You Begin
 
-1. Fork this starter repo into your GitHub account.
-1. Clone your repo down to your machine.
-1. Explore your new project repo in VS Code on your local machine.
+1. Fork this starter repo (https://github.com/denisecase/streaming-03-rabbitmq) into your GitHub account.
+2. Clone your repo down to your machine.
+3. Explore your new project repo in VS Code on your local machine.
 
 ## Task 1. Create a Python Virtual Environment
 
 We will create a local Python virtual environment to isolate our project's third-party dependencies from other projects.
 
 1. Open a terminal window in VS Code.
-1. Use the built-in Python utility venv to create a new virtual environment named `.venv` in the current directory.
 
 ```shell
 python3 -m venv .venv
@@ -43,8 +36,6 @@ We use .venv as the name to keep it away from our project files.
 ## Task 2. Activate the Virtual Environment
 
 In the same VS Code terminal window, activate the virtual environment.
-
-- On Windows, run: `.venv\Scripts\activate`
 - On Linux/MacOS, run: `source .venv/bin/activate`
 
 Verify you see the virtual environment name (.venv) in your terminal prompt.
@@ -79,7 +70,7 @@ python3 util_aboutrabbit.py
 pip list
 ```
 
-![verifying setup](./images/verifying.png)
+![verifying setup](<all setup image.png>)
 
 
 ## Task 5. Read
